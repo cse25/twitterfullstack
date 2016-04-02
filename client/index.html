@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="../node_modules/angular/angular.js"></script>
+		<script src="app.js"></script>
+	<title>Twitter Fullstack</title>
+</head>
+<body ng-app="myApp">
+	<h1>Twitter Fullstack</h1>
+	<div>
+		<input type="text" ng-model="twitterHandle" placeholder="Enter a Twitter Handle">
+		<button ng-click="getTweets">Get Tweets</button>
+	</div>
+	<!--
+	<div id="main">
+		<form id="send" method="get">
+			<input type="text" id="username"></input>
+		</form>
+	</div>
+	<div id="tweets">
+		
+	</div>
+
+	<div>
+  	<input type="text" ng-model="twitterHandle" placeholder="Enter a name">
+  		<h1>Hello, {{ yourName }}!</h1>
+  	</div>
+  	<div ng-controller="MyController">
+  		{{ person.name }}
+  	</div> -->
+</body>
+</html>

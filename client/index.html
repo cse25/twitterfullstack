@@ -7,26 +7,13 @@
 </head>
 <body ng-app="myApp">
 	<h1>Twitter Fullstack</h1>
-	<div>
-		<input type="text" ng-model="twitterHandle" placeholder="Enter a Twitter Handle">
-		<button ng-click="getTweets">Get Tweets</button>
-	</div>
-	<!--
-	<div id="main">
-		<form id="send" method="get">
-			<input type="text" id="username"></input>
-		</form>
-	</div>
-	<div id="tweets">
-		
-	</div>
+	<div ng-controller="FormController">
 
-	<div>
-  	<input type="text" ng-model="twitterHandle" placeholder="Enter a name">
-  		<h1>Hello, {{ yourName }}!</h1>
-  	</div>
-  	<div ng-controller="MyController">
-  		{{ person.name }}
-  	</div> -->
+		<input type="text" ng-model="twitterHandle" placeholder="Enter a Twitter Handle">
+
+		<button ng-click="postHandle()">Get Tweets</button>
+
+		<p>form = {{ twitterHandle }}</p>
+	</div>
 </body>
 </html>

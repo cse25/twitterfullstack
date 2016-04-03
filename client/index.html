@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<script src="../node_modules/angular/angular.js"></script>
+		<script src="bower_components/angular/angular.js"></script>
 		<script src="app.js"></script>
 	<title>Twitter Fullstack</title>
 </head>
@@ -9,11 +9,15 @@
 	<h1>Twitter Fullstack</h1>
 	<div ng-controller="FormController">
 
-		<input type="text" ng-model="twitterHandle" placeholder="Enter a Twitter Handle">
+		<input name="twitterHandle" type="text" ng-model="twitterHandle.username" placeholder="Enter a Twitter Handle">
 
 		<button ng-click="postHandle()">Get Tweets</button>
 
-		<p>form = {{ twitterHandle }}</p>
+		<!-- <p>form = {{ twitterHandle }}</p> -->
+	</div>
+
+	<div id="tweets">
+
 	</div>
 </body>
 </html>

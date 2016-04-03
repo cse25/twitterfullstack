@@ -10,7 +10,7 @@ app.controller('FormController', function($scope, $http) {
 		var tweets = JSON.stringify($scope.twitterHandle);
 		console.log('Posting Handle', tweets);
 		$http.post('/', tweets).then(function(tweets) {
-			console.log(tweets.data.statuses[0].text);
+			console.log(tweets.data.statuses.text);
 		});
 	}
 });
